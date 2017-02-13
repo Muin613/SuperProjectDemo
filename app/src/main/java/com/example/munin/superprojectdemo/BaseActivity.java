@@ -60,6 +60,9 @@ public abstract class BaseActivity extends Activity {
 
     abstract void findView();
 
+    /*
+     * Toast 吐司一些反馈信息
+     */
     void showToast(String content) {
         Toast.makeText(BaseActivity.this, "" + content, Toast.LENGTH_SHORT).show();
     }
