@@ -12,6 +12,7 @@ import com.example.munin.superprojectdemo.Base.CustomView.CustomProgressDialog;
 
 /**
  * Created by Munin on 2017/2/13.
+ * time
  */
 public abstract class BaseActivity extends FragmentActivity {
     CustomProgressDialog loadingProgress;//进度条
