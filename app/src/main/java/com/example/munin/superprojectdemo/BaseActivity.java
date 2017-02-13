@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
 import com.example.munin.superprojectdemo.Base.CustomView.CustomProgressDialog;
@@ -12,7 +13,7 @@ import com.example.munin.superprojectdemo.Base.CustomView.CustomProgressDialog;
 /**
  * Created by Munin on 2017/2/13.
  */
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends FragmentActivity {
     CustomProgressDialog loadingProgress;//进度条
 
     @Override
