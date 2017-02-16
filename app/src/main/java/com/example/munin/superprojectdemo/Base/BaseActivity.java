@@ -1,7 +1,5 @@
-package com.example.munin.superprojectdemo;
+package com.example.munin.superprojectdemo.Base;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -26,23 +24,23 @@ public abstract class BaseActivity extends FragmentActivity {
         setView();
     }
 
-    abstract void connectNet();
+    public abstract void connectNet();
 
-    abstract void setMainView();
+    public abstract void setMainView();
 
     void initView() {
         loadingProgress = new CustomProgressDialog(getApplicationContext());
     }
 
-    abstract void setView();
+    public abstract void setView();
 
-    abstract void Loading();
+    public abstract void Loading();
 
-    abstract void freshing();
+    public abstract void freshing();
 
-    abstract void stopLoading();
+    public abstract void stopLoading();
 
-    abstract void stopFreshing();
+    public  abstract void stopFreshing();
 
     void showProgress() {
         loadingProgress.show();
@@ -60,7 +58,7 @@ public abstract class BaseActivity extends FragmentActivity {
         loadingProgress.setTouchOutside(false);
     }
 
-    abstract void findView();
+    public abstract void findView();
 
     /*
      * Toast 吐司一些反馈信息

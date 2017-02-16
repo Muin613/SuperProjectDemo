@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:munin="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/yellow"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.munin.superprojectdemo.Base.CustomView.StarBarView
+            android:id="@+id/star_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            munin:starCount="7"
+            munin:starDistance="10px"
+            munin:starEmpty="@drawable/progress_dialog_loading"
+            munin:starFill="@mipmap/ic_launcher"
+            munin:starSize="80px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="0"
+            android:id="@+id/txt"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:numStars="5"
+        android:stepSize="1"
+        />
+</LinearLayout>
