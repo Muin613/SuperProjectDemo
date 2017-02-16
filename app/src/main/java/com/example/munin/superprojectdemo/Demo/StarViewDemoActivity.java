@@ -13,10 +13,7 @@ public class StarViewDemoActivity extends BaseActivity {
     private StarBarView starBarView;//自定义控件
     private TextView txt;
 
-    @Override
-    public void connectNet() {
 
-    }
 
     @Override
     public void setMainView() {
@@ -51,7 +48,10 @@ public class StarViewDemoActivity extends BaseActivity {
             }
         });
     }
+    @Override
+    public void connectNet() {
 
+    }
     @Override
     public void Loading() {
 

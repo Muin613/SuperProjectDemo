@@ -22,6 +22,7 @@ public abstract class BaseActivity extends FragmentActivity {
         findView();
         initView();
         setView();
+        connectNet();
     }
 
     public abstract void connectNet();
@@ -40,7 +41,7 @@ public abstract class BaseActivity extends FragmentActivity {
 
     public abstract void stopLoading();
 
-    public  abstract void stopFreshing();
+    public abstract void stopFreshing();
 
     void showProgress() {
         loadingProgress.show();
