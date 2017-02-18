@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import com.example.munin.superprojectdemo.Base.BaseActivity;
 import com.example.munin.superprojectdemo.Base.CustomView.StarBarView;
-import com.example.munin.superprojectdemo.Base.Debug;
+import com.example.munin.superprojectdemo.Base.DebugUtils;
 import com.example.munin.superprojectdemo.R;
 
 public class StarViewDemoActivity extends BaseActivity {
@@ -32,19 +32,19 @@ public class StarViewDemoActivity extends BaseActivity {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Debug.show(true,"原生控件，实时结果:"+rating);
+                DebugUtils.show(true,"原生控件，实时结果:"+rating);
             }
         });
         starBarView.setOnStarChangeListener(new StarBarView.OnStarChangeListener() {
             @Override
             public void onStarChange(float mark) {
-                Debug.show(true,"自定义评分控件,实时结果:"+mark);
+                DebugUtils.show(true,"自定义评分控件,实时结果:"+mark);
                 txt.setText(""+mark);
             }
 
             @Override
             public void onStarChangeFinished(float mark) {
-                Debug.show(true,"自定义评分控件，最终结果:"+mark);
+                DebugUtils.show(true,"自定义评分控件，最终结果:"+mark);
             }
         });
     }

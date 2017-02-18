@@ -5,7 +5,7 @@ import android.util.Log;
 /**
  * Created by Munin on 2017/2/15.
  */
-public class Debug {
+public class DebugUtils {
     static boolean flag = true;
     static boolean logFlag = false;
 

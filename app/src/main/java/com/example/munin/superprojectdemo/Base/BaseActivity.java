@@ -25,7 +25,6 @@ public abstract class BaseActivity extends FragmentActivity {
         connectNet();
     }
 
-    public abstract void connectNet();
 
     public abstract void setMainView();
 
@@ -33,7 +32,11 @@ public abstract class BaseActivity extends FragmentActivity {
         loadingProgress = new CustomProgressDialog(getApplicationContext());
     }
 
+    public abstract void findView();
+
     public abstract void setView();
+
+    public abstract void connectNet();
 
     public abstract void Loading();
 
@@ -59,7 +62,6 @@ public abstract class BaseActivity extends FragmentActivity {
         loadingProgress.setTouchOutside(false);
     }
 
-    public abstract void findView();
 
     /*
      * Toast 吐司一些反馈信息
