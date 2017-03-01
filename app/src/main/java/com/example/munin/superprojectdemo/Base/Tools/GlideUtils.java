@@ -1,6 +1,5 @@
-package com.example.munin.superprojectdemo.Base;
+package com.example.munin.superprojectdemo.Base.Tools;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Message;
@@ -9,6 +8,9 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.example.munin.superprojectdemo.Base.BitmapUtil;
+import com.example.munin.superprojectdemo.Base.NHandler;
+import com.example.munin.superprojectdemo.Base.ResultCodeHEX;
 
 /**
  * Created by Munin on 2017/2/16.
